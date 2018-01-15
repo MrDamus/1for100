@@ -1,0 +1,11 @@
+html {
+  font-size: 20px;
+  font-family: "Monda", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('night.jpg');
+  background: url('night.jpg');
+}
