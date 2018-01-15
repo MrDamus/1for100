@@ -1,3 +1,8 @@
+:root {
+  --light: 0.1;
+  --glow: 5px;
+}
+
 html {
   font-size: 20px;
   font-family: "Monda", sans-serif;
@@ -14,7 +19,7 @@ body {
 .night {
   height: 100vh;
   background-color: black;
-  opacity: .3;
+  opacity: calc(1 - var(--light));
 }
 
 .neon {
@@ -24,8 +29,9 @@ body {
   bottom: 3%;
   left: 5%;
   letter-spacing: .4rem;
-  text-shadow: rgba(255,255,255, 0.8) 0 0 40px, #47ff00 0 0 30px;
-  opacity: .3;
+  text-shadow: rgba(255,255,255, 0.8) 0 0 calc(5 * var(--glow)),
+   #47ff00 0 0 var(--glow);
+  opacity: var(--light);
 }
 
 .fa {
