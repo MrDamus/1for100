@@ -7,5 +7,42 @@ body {
   margin: 0;
   height: 100vh;
   background-image: url('night.jpg');
-  background: url('night.jpg');
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.night {
+  height: 100vh;
+  background-color: black;
+  opacity: .3;
+}
+
+.neon {
+  font-size: 4rem;
+  color: #47ff00;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  letter-spacing: .4rem;
+  text-shadow: rgba(255,255,255, 0.8) 0 0 40px, #47ff00 0 0 30px;
+  opacity: .3;
+}
+
+.fa {
+  font-size: 10rem;
+  letter-spacing: 2.5rem;
+}
+
+input {
+  position: absolute;
+  width: 300px;
+  top: 30px;
+  left: 30px;
+  height: 120px;
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 20px;
+  }
 }
